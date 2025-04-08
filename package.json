@@ -1,0 +1,25 @@
+{
+  "name": "mcp-server-receipt",
+  "version": "0.1.0",
+  "description": "MCP server for receipt management",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-server-receipt": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  }
+}
