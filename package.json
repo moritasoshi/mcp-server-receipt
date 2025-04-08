@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "MCP server for receipt management",
   "license": "MIT",
+  "author": "Soshi Morita",
   "type": "module",
   "bin": {
     "mcp-server-receipt": "dist/index.js"
@@ -10,6 +11,23 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soshi-morita/mcp-server-receipt.git"
+  },
+  "keywords": [
+    "mcp",
+    "receipt",
+    "file-management",
+    "llm",
+    "model-context-protocol",
+    "automation",
+    "pdf",
+    "document-processing"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc && chmod +x dist/*.js",
     "prepare": "npm run build",
